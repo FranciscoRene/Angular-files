@@ -4,4 +4,12 @@ function AlumnosController($scope){
 		{nombre:"Raul", telefono:"telefono 2", curso:"curso 2"},
 		{nombre:"Cristian", telefono:"telefono 3", curso:"curso 3"},
 	];
+	
+	$scope.Save=function(){
+		$scope.alumnos.push({
+							nombre: $scope.nuevoAlumno.nombre,
+							telefono: $scope.nuevoAlumno.telefono,
+							curso: $scope.nuevoAlumno.curso
+							 })
+	}
 }
